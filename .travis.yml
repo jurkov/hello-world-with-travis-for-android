@@ -15,7 +15,6 @@ install:
   # Installing meson, ninja and nasm that are necessary for libdav1d building
   - sudo apt-get install python3-pip python3-setuptools python3-wheel ninja-build
   - sudo pip3 install meson==0.52.1
-  - ls $ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin/clang
   - ./home/travis/android-sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -pie -target armv7a-linux-androideabi16 hello_world.c
   - .$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -pie -target armv7a-linux-androideabi16 hello_world.c
   - chmod +x $ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin/clang
