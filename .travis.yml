@@ -16,5 +16,6 @@ install:
   - sudo pip3 install meson==0.52.1
   - ls -l $ANDROID_NDK_HOME/toolchains/llvm/prebuilt/
   - ls -l $ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin
-  - .$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin/armv7a-linux-androideabi16-clang -pie hello_world.c
+  - ls -l $ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin/clang
+  - .$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -pie -target armv7a-linux-androideabi16 hello_world.c
   - file a.out
