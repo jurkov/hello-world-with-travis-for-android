@@ -1,4 +1,4 @@
-language: c
+language: java
 jdk: openjdk8
 dist: xenial
 sudo: required
