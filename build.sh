@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
 
-$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -pie -target armv7a-linux-androideabi16 hello_world.c
-file a.out
+export TARGET=armv7a-linux-androideabi16
+
+$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -pie -target $TARGET -o hello_world_$TARGET hello_world.c
+file hello_world_$TARGET
