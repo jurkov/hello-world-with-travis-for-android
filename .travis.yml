@@ -15,6 +15,6 @@ install:
   - sudo apt-get install python3-pip python3-setuptools python3-wheel ninja-build
   - sudo pip3 install meson==0.52.1
   - ls -l $ANDROID_NDK_HOME/toolchains/llvm/prebuilt/
-  - ls -l $ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/
-  - .$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/clang++ -pie -target armv7a-linux-androideabi21 hello_world.c
+  - ls -l $ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin
+  - .$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -pie -target armv7a-linux-androideabi21 hello_world.c
   - file a.out
